@@ -1,0 +1,4 @@
+[submodule "apps/kdrive"]
+	path = apps/kdrive
+	url = git@ksogit.kingsoft.net:wpseco/ecis/ecis-web/apps/kdrive.git
+	branch = feature_docs_wh

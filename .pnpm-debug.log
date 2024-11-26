@@ -1,0 +1,24 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Volumes/Mac/allIn/ksogit/tmp/ecissdk"
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: build",
+      "code": "ENOENT",
+      "stack": "Error: not found: build\n    at getNotFoundError (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:41677:51)\n    at Function.whichSync [as sync] (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:41754:13)\n    at getCommandAbsolutePathSync (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:43319:44)\n    at default_1 (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:43328:32)\n    at /Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:172149:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/Volumes/Mac/allIn/ksogit/tmp/ecissdk",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: build",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: build\n    at getNotFoundError (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:41677:51)\n    at Function.whichSync [as sync] (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:41754:13)\n    at getCommandAbsolutePathSync (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:43319:44)\n    at default_1 (/Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:43328:32)\n    at /Users/wowhoo/.config/yarn/global/node_modules/pnpm/dist/pnpm.cjs:172149:39"
+    }
+  }
+}
