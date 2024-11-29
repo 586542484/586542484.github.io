@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "文档站",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -29,7 +29,8 @@ export default defineConfig({
       },
     ],
 
-    sidebar: [
+    // 单侧边栏
+    /* sidebar: [
       {
         text: '指南',
         collapsed: false,
@@ -92,7 +93,83 @@ export default defineConfig({
           }
         ],
       },
-    ],
+    ], */
+
+    // 多侧边栏
+    sidebar: {
+      // 当用户位于 `guide` 目录时，会显示此侧边栏
+      '/guide/': [
+        {
+          text: '归档',
+          items: [
+            {text: '文章目录', link: '/guide/archives'},
+          ],
+        },
+        {
+          text: '指南',
+          items: [
+            {
+              text: '介绍',
+              link: '/guide/introduction/README',
+            },
+            {
+              text: '基础用法',
+              collapsed: true,
+              items: [
+                {
+                  text: '入门',
+                  link: '/guide/usage/basic',
+                },
+                {
+                  text: '进阶',
+                  link: '/guide/usage/advanced',
+                }
+              ],
+            },
+            {
+              text: '常见问题',
+              link: '/guide/problem/FAQ',
+            },
+          ]
+        }
+      ],
+
+      // 当用户位于 `reference` 目录时，会显示此侧边栏
+      '/reference/': [
+        {
+          text: 'API 参考',
+          collapsed: true,
+          items: [
+            {
+              text: '基础 API',
+              link: '/reference/api',
+            },
+            {
+              text: 'CLI 参考',
+              link: '/reference/cli',
+            },
+          ],
+        },
+      ],
+
+      // 当用户位于 `example` 目录时，会显示此侧边栏
+      '/example/': [
+        {
+          text: '示例',
+          items: [
+            {
+              text: 'Markdown Examples',
+              link: '/example/markdown-examples',
+            },
+            {
+              text: 'Runtime API Examples',
+              link: '/example/api-examples',
+            }
+          ],
+        },
+      ],
+
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
@@ -106,7 +183,13 @@ export default defineConfig({
 
     // 本地搜索
     search: {
-      provider:'local',
+      provider: 'local',
+    },
+
+    // 编辑链接
+    editLink: {
+      pattern: 'https://github.com/586542484/586542484.github.io/tree/feature_docs_lk/packages/document/:path',
+      text: '在 GitHub 上编辑此页面'
     }
 
   }

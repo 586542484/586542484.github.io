@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "vitepress/*": [
+                "node_modules/vitepress/*"
+            ]
+        },
+        "types": [
+            "vitepress"
+        ]
+    }
+}

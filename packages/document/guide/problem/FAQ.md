@@ -1,5 +1,14 @@
 ---
 title: 常见问题
+titleTemplate: Vitepress
+description: 本节将介绍如何快速配置和使用项目
+layout: doc
+navbar: "true"
+sidebar: "true"
+tags: blog
+date: 
+created: 2024-11-30T16:54
+updated: 2024-11-30T01:16
 ---
 
 # 常见问题

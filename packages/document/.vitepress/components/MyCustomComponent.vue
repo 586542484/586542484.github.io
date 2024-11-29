@@ -1,9 +1,9 @@
 <template>
     <nav class="custom-nav">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/guide/introduction/README">介绍</a></li>
-            <li><a href="/guide/usage/basic">入门</a></li>
+            <li><a href="/guide/introduction/README">指南</a></li>
+            <li><a href="/reference/api">参考</a></li>
+            <li><a href="/example/markdown-examples">示例</a></li>
         </ul>
     </nav>
 </template>
